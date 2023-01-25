@@ -1,0 +1,59 @@
+programa {
+  funcao inicio() {
+    cadeia acordar, pasta, escovar, corRoupa, corTenis, sair
+    inteiro escovarOuRoupa
+
+    escreva("Bom dia, você acabou de acordar! Você está descansado? s/n \n")
+    leia(acordar)
+    se (acordar == "n" ou acordar == "N")
+      {
+      escreva("Bom dia, você acabou de acordar, descansou mais um pouco, esta na hora de levantar! \n")
+      }
+    escreva("Levante-se da cama! Qual o primeiro passo? Escovar os dentes (1) ou colocar a roupa (2)? \n")
+    leia(escovarOuRoupa)
+    se (escovarOuRoupa == 1){
+      escreva("Digite 1 para colocar pasta na escova.\n")
+      leia(pasta)
+      se(pasta == 1){
+        escreva("Pasta colocada, digite 1 para escovar.\n")
+        leia(escovar)
+          se(escovar == 1){
+          escreva("Dentes escovados, Hora se vestir!\n")}
+          escreva("Apenas a calca jeans esta limpa, vista ela e escolha a cor da sua camiseta! Qual a cor?\n")
+          leia(corRoupa)
+          escreva("Bela camiseta ", corRoupa, "!\n")
+          escreva("E o seu tenis? Qual a cor?\n")
+          leia(corTenis)
+          escreva("Camiseta ", corRoupa, " e tenis ", corTenis,"... Bela combinacao!\n")
+          escreva("Dentes escovados, Roupa vestida, vamos embora, digite SAIR para sair do quarto e comecar seu dia!\n")
+          leia(sair)
+            se(sair == "Sair" ou sair == "SAIR" ou sair == "sair")
+            escreva("Ate mais pessoa da camiseta ", corRoupa, " e do tenis ", corTenis, "...\n")
+            escreva("CALMA!\n")
+            escreva("É perigoso ir sozinho!\nLeve isso. ₪₪₪₪§|(ΞΞΞΞΞΞΞΞΞΞΞΞ>\n")
+      }
+      }
+    senao{
+      escreva("Apenas a calca jeans esta limpa, vista ela e escolha a cor da sua camiseta! Qual a cor?\n")
+      leia(corRoupa)
+      escreva("Bela camiseta ", corRoupa, "!\n")
+      escreva("E o seu tenis? Qual a cor?\n")
+      leia(corTenis)
+      escreva("Camiseta ", corRoupa, " e tenis ", corTenis,"... Bela combinacao!\n")
+      escreva("Roupa vestida! Hora de escovar os dentes!\n")
+      escreva("Digite 1 para colocar pasta na escova.\n")
+      leia(pasta)
+      se(pasta == 1){
+        escreva("Pasta colocada, digite 1 para escovar.\n")
+        leia(escovar)
+          se(escovar == 1){
+          escreva("Dentes escovados, Roupa vestida, vamos embora, digite SAIR para sair do quarto e comecar seu dia!\n")
+          leia(sair)
+            se(sair == "Sair" ou sair == "SAIR" ou sair == "sair")
+            escreva("Ate mais pessoa da camiseta ", corRoupa, " e do tenis ", corTenis, "...\n")
+            escreva("CALMA!\n")
+            escreva("É perigoso ir sozinho!\nLeve isso. ₪₪₪₪§|(ΞΞΞΞΞΞΞΞΞΞΞΞ>\n")
+      }
+      }
+  }
+}
